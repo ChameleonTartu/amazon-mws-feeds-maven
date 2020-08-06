@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Report Schedule Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportScheduleCountAsyncSample {
 
@@ -140,7 +139,7 @@ public class GetReportScheduleCountAsyncSample {
     /**
      * Get Report Schedule Count request sample
      * returns the number of report schedules
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

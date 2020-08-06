@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Get Feed Submission List  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetFeedSubmissionListSample {
 
@@ -134,7 +133,7 @@ public class GetFeedSubmissionListSample {
     /**
      * Get Feed Submission List  request sample
      * returns a list of feed submission identifiers and their associated metadata
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

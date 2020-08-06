@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Cancel Feed Submissions  Samples
- *
- *
+ * @since 1.2.0
  */
 public class CancelFeedSubmissionsSample {
 
@@ -144,7 +143,7 @@ public class CancelFeedSubmissionsSample {
      * Cancel Feed Submissions  request sample
      * cancels feed submissions - by default all of the submissions of the
      * last 30 days that have not started processing
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Get Report Schedule List By Next Token  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportScheduleListByNextTokenSample {
 
@@ -131,7 +130,7 @@ public class GetReportScheduleListByNextTokenSample {
     /**
      * Get Report Schedule List By Next Token  request sample
      * retrieve the next batch of list items and if there are more items to retrieve
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

@@ -32,8 +32,7 @@ import com.amazonaws.mws.feeds.model.ResponseMetadata;
 /**
  *
  * Get Report Request Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportRequestCountSample {
 
@@ -134,7 +133,7 @@ public class GetReportRequestCountSample {
      * Get Report Request Count  request sample
      * returns a count of report requests; by default all the report
      * requests in the last 90 days
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

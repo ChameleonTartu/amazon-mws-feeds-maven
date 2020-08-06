@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Submit Feed  Samples
- *
- *
+ * @since 1.2.0
  */
 public class SubmitFeedAsyncSample {
 
@@ -158,7 +157,7 @@ public class SubmitFeedAsyncSample {
      * PurgeAndReplace if true means that your existing e.g. inventory is
      * wiped out and replace with the contents of this feed - use with
      * caution (the default is false).
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

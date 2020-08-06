@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Cancel Report Requests  Samples
- *
- *
+ * @since 1.2.0
  */
 public class CancelReportRequestsAsyncSample {
 
@@ -141,7 +140,7 @@ public class CancelReportRequestsAsyncSample {
      * Cancel Report Requests request sample
      * cancels report requests that have not yet started processing,
      * by default all those within the last 90 days
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

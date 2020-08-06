@@ -32,8 +32,7 @@ import com.amazonaws.mws.feeds.model.ResponseMetadata;
 /**
  *
  * Get Feed Submission Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetFeedSubmissionCountSample {
 
@@ -133,7 +132,7 @@ public class GetFeedSubmissionCountSample {
     /**
      * Get Feed Submission Count  request sample
      * returns the number of feeds matching all of the specified criteria
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

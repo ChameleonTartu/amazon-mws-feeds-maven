@@ -27,10 +27,9 @@ import com.amazonaws.mws.feeds.model.*;
 import java.util.Arrays;
 
 /**
- * 
+ *
  * Submit Feed Samples
- * 
- * 
+ * @since 1.2.0
  */
 public class SubmitFeedSample {
 
@@ -42,7 +41,10 @@ public class SubmitFeedSample {
      *            unused
      */
     /**
-     * @param args
+     * <p>main.</p>
+     *
+     * @param args a {@link java.lang.String} object.
+     * @param args a {@link java.lang.String} object.
      */
     public static void main(String... args) {
 
@@ -153,7 +155,7 @@ public class SubmitFeedSample {
      * is. PurgeAndReplace if true means that your existing e.g. inventory is
      * wiped out and replace with the contents of this feed - use with caution
      * (the default is false).
-     * 
+     *
      * @param service
      *            instance of MarketplaceWebService service
      * @param request

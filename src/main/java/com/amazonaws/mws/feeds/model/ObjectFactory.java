@@ -16,6 +16,9 @@ import javax.xml.bind.annotation.XmlRegistry;
  * type definitions, element declarations and model
  * groups.  Factory methods for each of these are
  * provided in this class.
+ *
+ * @author dmytro
+ * @version $Id: $Id
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -28,639 +31,639 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SubmitFeedResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.SubmitFeedResponse}
      *
-     * @return a {@link SubmitFeedResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.SubmitFeedResponse} object.
      */
     public SubmitFeedResponse createSubmitFeedResponse() {
         return new SubmitFeedResponse();
     }
 
     /**
-     * Create an instance of {@link UpdateReportAcknowledgementsResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.UpdateReportAcknowledgementsResponse}
      *
-     * @return a {@link UpdateReportAcknowledgementsResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.UpdateReportAcknowledgementsResponse} object.
      */
     public UpdateReportAcknowledgementsResponse createUpdateReportAcknowledgementsResponse() {
         return new UpdateReportAcknowledgementsResponse();
     }
 
     /**
-     * Create an instance of {@link SubmitFeedRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.SubmitFeedRequest}
      *
-     * @return a {@link SubmitFeedRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.SubmitFeedRequest} object.
      */
     public SubmitFeedRequest createSubmitFeedRequest() {
         return new SubmitFeedRequest();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionCountResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionCountResponse}
      *
-     * @return a {@link GetFeedSubmissionCountResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionCountResponse} object.
      */
     public GetFeedSubmissionCountResponse createGetFeedSubmissionCountResponse() {
         return new GetFeedSubmissionCountResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleCountRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleCountRequest}
      *
-     * @return a {@link GetReportScheduleCountRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleCountRequest} object.
      */
     public GetReportScheduleCountRequest createGetReportScheduleCountRequest() {
         return new GetReportScheduleCountRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestCountRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestCountRequest}
      *
-     * @return a {@link GetReportRequestCountRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestCountRequest} object.
      */
     public GetReportRequestCountRequest createGetReportRequestCountRequest() {
         return new GetReportRequestCountRequest();
     }
 
     /**
-     * Create an instance of {@link UpdateReportAcknowledgementsResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.UpdateReportAcknowledgementsResult}
      *
-     * @return a {@link UpdateReportAcknowledgementsResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.UpdateReportAcknowledgementsResult} object.
      */
     public UpdateReportAcknowledgementsResult createUpdateReportAcknowledgementsResult() {
         return new UpdateReportAcknowledgementsResult();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionCountResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionCountResult}
      *
-     * @return a {@link GetFeedSubmissionCountResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionCountResult} object.
      */
     public GetFeedSubmissionCountResult createGetFeedSubmissionCountResult() {
         return new GetFeedSubmissionCountResult();
     }
 
     /**
-     * Create an instance of {@link CancelFeedSubmissionsResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.CancelFeedSubmissionsResult}
      *
-     * @return a {@link CancelFeedSubmissionsResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelFeedSubmissionsResult} object.
      */
     public CancelFeedSubmissionsResult createCancelFeedSubmissionsResult() {
         return new CancelFeedSubmissionsResult();
     }
 
     /**
-     * Create an instance of {@link GetReportListByNextTokenRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportListByNextTokenRequest}
      *
-     * @return a {@link GetReportListByNextTokenRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportListByNextTokenRequest} object.
      */
     public GetReportListByNextTokenRequest createGetReportListByNextTokenRequest() {
         return new GetReportListByNextTokenRequest();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionListByNextTokenResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListByNextTokenResult}
      *
-     * @return a {@link GetFeedSubmissionListByNextTokenResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListByNextTokenResult} object.
      */
     public GetFeedSubmissionListByNextTokenResult createGetFeedSubmissionListByNextTokenResult() {
         return new GetFeedSubmissionListByNextTokenResult();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionListByNextTokenRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListByNextTokenRequest}
      *
-     * @return a {@link GetFeedSubmissionListByNextTokenRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListByNextTokenRequest} object.
      */
     public GetFeedSubmissionListByNextTokenRequest createGetFeedSubmissionListByNextTokenRequest() {
         return new GetFeedSubmissionListByNextTokenRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestListByNextTokenResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestListByNextTokenResponse}
      *
-     * @return a {@link GetReportRequestListByNextTokenResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestListByNextTokenResponse} object.
      */
     public GetReportRequestListByNextTokenResponse createGetReportRequestListByNextTokenResponse() {
         return new GetReportRequestListByNextTokenResponse();
     }
 
     /**
-     * Create an instance of {@link ManageReportScheduleRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ManageReportScheduleRequest}
      *
-     * @return a {@link ManageReportScheduleRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ManageReportScheduleRequest} object.
      */
     public ManageReportScheduleRequest createManageReportScheduleRequest() {
         return new ManageReportScheduleRequest();
     }
 
     /**
-     * Create an instance of {@link TypeList}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.TypeList}
      *
-     * @return a {@link TypeList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.TypeList} object.
      */
     public TypeList createTypeList() {
         return new TypeList();
     }
 
     /**
-     * Create an instance of {@link SubmitFeedResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.SubmitFeedResult}
      *
-     * @return a {@link SubmitFeedResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.SubmitFeedResult} object.
      */
     public SubmitFeedResult createSubmitFeedResult() {
         return new SubmitFeedResult();
     }
 
     /**
-     * Create an instance of {@link StatusList}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.StatusList}
      *
-     * @return a {@link StatusList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.StatusList} object.
      */
     public StatusList createStatusList() {
         return new StatusList();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionListResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListResult}
      *
-     * @return a {@link GetFeedSubmissionListResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListResult} object.
      */
     public GetFeedSubmissionListResult createGetFeedSubmissionListResult() {
         return new GetFeedSubmissionListResult();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionResultResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionResultResult}
      *
-     * @return a {@link GetFeedSubmissionResultResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionResultResult} object.
      */
     public GetFeedSubmissionResultResult createGetFeedSubmissionResultResult() {
         return new GetFeedSubmissionResultResult();
     }
 
     /**
-     * Create an instance of {@link FeedSubmissionInfo}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.FeedSubmissionInfo}
      *
-     * @return a {@link FeedSubmissionInfo} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.FeedSubmissionInfo} object.
      */
     public FeedSubmissionInfo createFeedSubmissionInfo() {
         return new FeedSubmissionInfo();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestListResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestListResponse}
      *
-     * @return a {@link GetReportRequestListResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestListResponse} object.
      */
     public GetReportRequestListResponse createGetReportRequestListResponse() {
         return new GetReportRequestListResponse();
     }
 
     /**
-     * Create an instance of {@link ReportSchedule}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ReportSchedule}
      *
-     * @return a {@link ReportSchedule} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ReportSchedule} object.
      */
     public ReportSchedule createReportSchedule() {
         return new ReportSchedule();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleListResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleListResult}
      *
-     * @return a {@link GetReportScheduleListResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleListResult} object.
      */
     public GetReportScheduleListResult createGetReportScheduleListResult() {
         return new GetReportScheduleListResult();
     }
 
     /**
-     * Create an instance of {@link IdList}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.IdList}
      *
-     * @return a {@link IdList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.IdList} object.
      */
     public IdList createIdList() {
         return new IdList();
     }
 
     /**
-     * Create an instance of {@link RequestReportRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.RequestReportRequest}
      *
-     * @return a {@link RequestReportRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.RequestReportRequest} object.
      */
     public RequestReportRequest createRequestReportRequest() {
         return new RequestReportRequest();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionCountRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionCountRequest}
      *
-     * @return a {@link GetFeedSubmissionCountRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionCountRequest} object.
      */
     public GetFeedSubmissionCountRequest createGetFeedSubmissionCountRequest() {
         return new GetFeedSubmissionCountRequest();
     }
 
     /**
-     * Create an instance of {@link RequestReportResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.RequestReportResponse}
      *
-     * @return a {@link RequestReportResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.RequestReportResponse} object.
      */
     public RequestReportResponse createRequestReportResponse() {
         return new RequestReportResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleCountResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleCountResult}
      *
-     * @return a {@link GetReportScheduleCountResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleCountResult} object.
      */
     public GetReportScheduleCountResult createGetReportScheduleCountResult() {
         return new GetReportScheduleCountResult();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionResultRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionResultRequest}
      *
-     * @return a {@link GetFeedSubmissionResultRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionResultRequest} object.
      */
     public GetFeedSubmissionResultRequest createGetFeedSubmissionResultRequest() {
         return new GetFeedSubmissionResultRequest();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionListRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListRequest}
      *
-     * @return a {@link GetFeedSubmissionListRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListRequest} object.
      */
     public GetFeedSubmissionListRequest createGetFeedSubmissionListRequest() {
         return new GetFeedSubmissionListRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestCountResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestCountResponse}
      *
-     * @return a {@link GetReportRequestCountResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestCountResponse} object.
      */
     public GetReportRequestCountResponse createGetReportRequestCountResponse() {
         return new GetReportRequestCountResponse();
     }
 
     /**
-     * Create an instance of {@link ReportInfo}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ReportInfo}
      *
-     * @return a {@link ReportInfo} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ReportInfo} object.
      */
     public ReportInfo createReportInfo() {
         return new ReportInfo();
     }
 
     /**
-     * Create an instance of {@link ManageReportScheduleResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ManageReportScheduleResponse}
      *
-     * @return a {@link ManageReportScheduleResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ManageReportScheduleResponse} object.
      */
     public ManageReportScheduleResponse createManageReportScheduleResponse() {
         return new ManageReportScheduleResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleListByNextTokenResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleListByNextTokenResult}
      *
-     * @return a {@link GetReportScheduleListByNextTokenResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleListByNextTokenResult} object.
      */
     public GetReportScheduleListByNextTokenResult createGetReportScheduleListByNextTokenResult() {
         return new GetReportScheduleListByNextTokenResult();
     }
 
     /**
-     * Create an instance of {@link ResponseMetadata}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ResponseMetadata}
      *
-     * @return a {@link ResponseMetadata} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ResponseMetadata} object.
      */
     public ResponseMetadata createResponseMetadata() {
         return new ResponseMetadata();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestListResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestListResult}
      *
-     * @return a {@link GetReportRequestListResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestListResult} object.
      */
     public GetReportRequestListResult createGetReportRequestListResult() {
         return new GetReportRequestListResult();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestCountResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestCountResult}
      *
-     * @return a {@link GetReportRequestCountResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestCountResult} object.
      */
     public GetReportRequestCountResult createGetReportRequestCountResult() {
         return new GetReportRequestCountResult();
     }
 
     /**
-     * Create an instance of {@link GetReportListRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportListRequest}
      *
-     * @return a {@link GetReportListRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportListRequest} object.
      */
     public GetReportListRequest createGetReportListRequest() {
         return new GetReportListRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestListByNextTokenRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestListByNextTokenRequest}
      *
-     * @return a {@link GetReportRequestListByNextTokenRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestListByNextTokenRequest} object.
      */
     public GetReportRequestListByNextTokenRequest createGetReportRequestListByNextTokenRequest() {
         return new GetReportRequestListByNextTokenRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportListResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportListResponse}
      *
-     * @return a {@link GetReportListResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportListResponse} object.
      */
     public GetReportListResponse createGetReportListResponse() {
         return new GetReportListResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportResponse}
      *
-     * @return a {@link GetReportResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportResponse} object.
      */
     public GetReportResponse createGetReportResponse() {
         return new GetReportResponse();
     }
 
     /**
-     * Create an instance of {@link UpdateReportAcknowledgementsRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.UpdateReportAcknowledgementsRequest}
      *
-     * @return a {@link UpdateReportAcknowledgementsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.UpdateReportAcknowledgementsRequest} object.
      */
     public UpdateReportAcknowledgementsRequest createUpdateReportAcknowledgementsRequest() {
         return new UpdateReportAcknowledgementsRequest();
     }
 
     /**
-     * Create an instance of {@link Error}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.Error}
      *
-     * @return a {@link Error} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.Error} object.
      */
     public Error createError() {
         return new Error();
     }
 
     /**
-     * Create an instance of {@link Error.Detail}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.Error.Detail}
      *
-     * @return a {@link Error.Detail} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.Error.Detail} object.
      */
     public Error.Detail createErrorDetail() {
         return new Error.Detail();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleListResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleListResponse}
      *
-     * @return a {@link GetReportScheduleListResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleListResponse} object.
      */
     public GetReportScheduleListResponse createGetReportScheduleListResponse() {
         return new GetReportScheduleListResponse();
     }
 
     /**
-     * Create an instance of {@link CancelFeedSubmissionsResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.CancelFeedSubmissionsResponse}
      *
-     * @return a {@link CancelFeedSubmissionsResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelFeedSubmissionsResponse} object.
      */
     public CancelFeedSubmissionsResponse createCancelFeedSubmissionsResponse() {
         return new CancelFeedSubmissionsResponse();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionResultResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionResultResponse}
      *
-     * @return a {@link GetFeedSubmissionResultResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionResultResponse} object.
      */
     public GetFeedSubmissionResultResponse createGetFeedSubmissionResultResponse() {
         return new GetFeedSubmissionResultResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportListResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportListResult}
      *
-     * @return a {@link GetReportListResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportListResult} object.
      */
     public GetReportListResult createGetReportListResult() {
         return new GetReportListResult();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionListResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListResponse}
      *
-     * @return a {@link GetFeedSubmissionListResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListResponse} object.
      */
     public GetFeedSubmissionListResponse createGetFeedSubmissionListResponse() {
         return new GetFeedSubmissionListResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequest}
      *
-     * @return a {@link GetReportRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequest} object.
      */
     public GetReportRequest createGetReportRequest() {
         return new GetReportRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportCountResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportCountResponse}
      *
-     * @return a {@link GetReportCountResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportCountResponse} object.
      */
     public GetReportCountResponse createGetReportCountResponse() {
         return new GetReportCountResponse();
     }
 
     /**
-     * Create an instance of {@link ErrorResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ErrorResponse}
      *
-     * @return a {@link ErrorResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ErrorResponse} object.
      */
     public ErrorResponse createErrorResponse() {
         return new ErrorResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleListRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleListRequest}
      *
-     * @return a {@link GetReportScheduleListRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleListRequest} object.
      */
     public GetReportScheduleListRequest createGetReportScheduleListRequest() {
         return new GetReportScheduleListRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestListByNextTokenResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestListByNextTokenResult}
      *
-     * @return a {@link GetReportRequestListByNextTokenResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestListByNextTokenResult} object.
      */
     public GetReportRequestListByNextTokenResult createGetReportRequestListByNextTokenResult() {
         return new GetReportRequestListByNextTokenResult();
     }
 
     /**
-     * Create an instance of {@link GetReportRequestListRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportRequestListRequest}
      *
-     * @return a {@link GetReportRequestListRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportRequestListRequest} object.
      */
     public GetReportRequestListRequest createGetReportRequestListRequest() {
         return new GetReportRequestListRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportListByNextTokenResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportListByNextTokenResult}
      *
-     * @return a {@link GetReportListByNextTokenResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportListByNextTokenResult} object.
      */
     public GetReportListByNextTokenResult createGetReportListByNextTokenResult() {
         return new GetReportListByNextTokenResult();
     }
 
     /**
-     * Create an instance of {@link CancelReportRequestsResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.CancelReportRequestsResult}
      *
-     * @return a {@link CancelReportRequestsResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsResult} object.
      */
     public CancelReportRequestsResult createCancelReportRequestsResult() {
         return new CancelReportRequestsResult();
     }
 
     /**
-     * Create an instance of {@link GetReportCountRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportCountRequest}
      *
-     * @return a {@link GetReportCountRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportCountRequest} object.
      */
     public GetReportCountRequest createGetReportCountRequest() {
         return new GetReportCountRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleListByNextTokenRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleListByNextTokenRequest}
      *
-     * @return a {@link GetReportScheduleListByNextTokenRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleListByNextTokenRequest} object.
      */
     public GetReportScheduleListByNextTokenRequest createGetReportScheduleListByNextTokenRequest() {
         return new GetReportScheduleListByNextTokenRequest();
     }
 
     /**
-     * Create an instance of {@link CancelFeedSubmissionsRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.CancelFeedSubmissionsRequest}
      *
-     * @return a {@link CancelFeedSubmissionsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelFeedSubmissionsRequest} object.
      */
     public CancelFeedSubmissionsRequest createCancelFeedSubmissionsRequest() {
         return new CancelFeedSubmissionsRequest();
     }
 
     /**
-     * Create an instance of {@link GetFeedSubmissionListByNextTokenResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListByNextTokenResponse}
      *
-     * @return a {@link GetFeedSubmissionListByNextTokenResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetFeedSubmissionListByNextTokenResponse} object.
      */
     public GetFeedSubmissionListByNextTokenResponse createGetFeedSubmissionListByNextTokenResponse() {
         return new GetFeedSubmissionListByNextTokenResponse();
     }
 
     /**
-     * Create an instance of {@link RequestReportResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.RequestReportResult}
      *
-     * @return a {@link RequestReportResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.RequestReportResult} object.
      */
     public RequestReportResult createRequestReportResult() {
         return new RequestReportResult();
     }
 
     /**
-     * Create an instance of {@link CancelReportRequestsRequest}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest}
      *
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest createCancelReportRequestsRequest() {
         return new CancelReportRequestsRequest();
     }
 
     /**
-     * Create an instance of {@link GetReportCountResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportCountResult}
      *
-     * @return a {@link GetReportCountResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportCountResult} object.
      */
     public GetReportCountResult createGetReportCountResult() {
         return new GetReportCountResult();
     }
 
     /**
-     * Create an instance of {@link ReportRequestInfo}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ReportRequestInfo}
      *
-     * @return a {@link ReportRequestInfo} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ReportRequestInfo} object.
      */
     public ReportRequestInfo createReportRequestInfo() {
         return new ReportRequestInfo();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleListByNextTokenResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleListByNextTokenResponse}
      *
-     * @return a {@link GetReportScheduleListByNextTokenResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleListByNextTokenResponse} object.
      */
     public GetReportScheduleListByNextTokenResponse createGetReportScheduleListByNextTokenResponse() {
         return new GetReportScheduleListByNextTokenResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportListByNextTokenResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportListByNextTokenResponse}
      *
-     * @return a {@link GetReportListByNextTokenResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportListByNextTokenResponse} object.
      */
     public GetReportListByNextTokenResponse createGetReportListByNextTokenResponse() {
         return new GetReportListByNextTokenResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportScheduleCountResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportScheduleCountResponse}
      *
-     * @return a {@link GetReportScheduleCountResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportScheduleCountResponse} object.
      */
     public GetReportScheduleCountResponse createGetReportScheduleCountResponse() {
         return new GetReportScheduleCountResponse();
     }
 
     /**
-     * Create an instance of {@link GetReportResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.GetReportResult}
      *
-     * @return a {@link GetReportResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.GetReportResult} object.
      */
     public GetReportResult createGetReportResult() {
         return new GetReportResult();
     }
 
     /**
-     * Create an instance of {@link CancelReportRequestsResponse}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.CancelReportRequestsResponse}
      *
-     * @return a {@link CancelReportRequestsResponse} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsResponse} object.
      */
     public CancelReportRequestsResponse createCancelReportRequestsResponse() {
         return new CancelReportRequestsResponse();
     }
 
     /**
-     * Create an instance of {@link ManageReportScheduleResult}
+     * Create an instance of {@link com.amazonaws.mws.feeds.model.ManageReportScheduleResult}
      *
-     * @return a {@link ManageReportScheduleResult} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.ManageReportScheduleResult} object.
      */
     public ManageReportScheduleResult createManageReportScheduleResult() {
         return new ManageReportScheduleResult();

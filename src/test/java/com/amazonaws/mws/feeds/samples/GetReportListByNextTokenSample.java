@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Get Report List By Next Token  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportListByNextTokenSample {
 
@@ -131,7 +130,7 @@ public class GetReportListByNextTokenSample {
     /**
      * Get Report List By Next Token  request sample
      * retrieve the next batch of list items and if there are more items to retrieve
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

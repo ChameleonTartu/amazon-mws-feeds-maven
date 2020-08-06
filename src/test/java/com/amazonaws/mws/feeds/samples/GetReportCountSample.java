@@ -32,8 +32,7 @@ import com.amazonaws.mws.feeds.model.ResponseMetadata;
 /**
  *
  * Get Report Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportCountSample {
 
@@ -143,7 +142,7 @@ public class GetReportCountSample {
      * returns a count of reports matching your criteria;
      * by default, the number of reports generated in the last 90 days,
      * regardless of acknowledgement status
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

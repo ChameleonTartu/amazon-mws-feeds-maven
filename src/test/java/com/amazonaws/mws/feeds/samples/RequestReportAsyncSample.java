@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Request Report  Samples
- *
- *
+ * @since 1.2.0
  */
 public class RequestReportAsyncSample {
 
@@ -142,7 +141,7 @@ public class RequestReportAsyncSample {
     /**
      * Request Report request sample
      * requests the generation of a report
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

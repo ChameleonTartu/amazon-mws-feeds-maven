@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Update Report Acknowledgements  Samples
- *
- *
+ * @since 1.2.0
  */
 public class UpdateReportAcknowledgementsSample {
 
@@ -131,7 +130,7 @@ public class UpdateReportAcknowledgementsSample {
     /**
      * Update Report Acknowledgements  request sample
      * The UpdateReportAcknowledgements operation updates the acknowledged status of one or more reports.
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Get Report Schedule List  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportScheduleListSample {
 
@@ -131,7 +130,7 @@ public class GetReportScheduleListSample {
     /**
      * Get Report Schedule List  request sample
      * returns the list of report schedules
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

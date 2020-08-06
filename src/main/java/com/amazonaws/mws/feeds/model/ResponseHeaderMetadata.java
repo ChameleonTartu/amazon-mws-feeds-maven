@@ -22,6 +22,9 @@ import java.util.List;
 
 /**
  * <p>ResponseHeaderMetadata class.</p>
+ *
+ * @author dmytro
+ * @version $Id: $Id
  */
 public class ResponseHeaderMetadata {
   private String requestId;

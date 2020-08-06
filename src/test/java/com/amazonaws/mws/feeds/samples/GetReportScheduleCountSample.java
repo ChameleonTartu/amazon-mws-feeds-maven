@@ -32,8 +32,7 @@ import com.amazonaws.mws.feeds.model.ResponseMetadata;
 /**
  *
  * Get Report Schedule Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportScheduleCountSample {
 
@@ -134,7 +133,7 @@ public class GetReportScheduleCountSample {
     /**
      * Get Report Schedule Count  request sample
      * returns the number of report schedules
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

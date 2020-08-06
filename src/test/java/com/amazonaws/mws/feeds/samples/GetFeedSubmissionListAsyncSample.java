@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Feed Submission List  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetFeedSubmissionListAsyncSample {
 
@@ -141,7 +140,7 @@ public class GetFeedSubmissionListAsyncSample {
     /**
      * Get Feed Submission List request sample
      * returns a list of feed submission identifiers and their associated metadata
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

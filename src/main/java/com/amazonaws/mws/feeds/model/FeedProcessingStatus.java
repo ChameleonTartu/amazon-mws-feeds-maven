@@ -7,23 +7,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for FeedProcessingStatus.
+ * <p>Java class for FeedProcessingStatus.</p>
  *
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
+ * <p>The following schema fragment specifies the expected content contained within this class. </p>
  * <pre>
- * &lt;simpleType name="FeedProcessingStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="_UNKNOWN_"/>
- *     &lt;enumeration value="_UNCONFIRMED_"/>
- *     &lt;enumeration value="_SUBMITTED_"/>
- *     &lt;enumeration value="_IN_PROGRESS_"/>
- *     &lt;enumeration value="_CANCELLED_"/>
- *     &lt;enumeration value="_DONE_"/>
- *     &lt;enumeration value="_IN_SAFETY_NET_"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="FeedProcessingStatus"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="_UNKNOWN_"/&gt;
+ *     &lt;enumeration value="_UNCONFIRMED_"/&gt;
+ *     &lt;enumeration value="_SUBMITTED_"/&gt;
+ *     &lt;enumeration value="_IN_PROGRESS_"/&gt;
+ *     &lt;enumeration value="_CANCELLED_"/&gt;
+ *     &lt;enumeration value="_DONE_"/&gt;
+ *     &lt;enumeration value="_IN_SAFETY_NET_"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
+ *
+ * @author dmytro
+ * @version $Id: $Id
  */
 @XmlType(name = "FeedProcessingStatus")
 @XmlEnum
@@ -62,7 +64,7 @@ public enum FeedProcessingStatus {
      * <p>fromValue.</p>
      *
      * @param v a {@link java.lang.String} object.
-     * @return a {@link FeedProcessingStatus} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.FeedProcessingStatus} object.
      */
     public static FeedProcessingStatus fromValue(String v) {
         for (FeedProcessingStatus c: FeedProcessingStatus.values()) {

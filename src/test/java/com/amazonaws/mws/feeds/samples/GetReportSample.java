@@ -31,8 +31,7 @@ import com.amazonaws.mws.feeds.model.ResponseMetadata;
 /**
  *
  * Get Report  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportSample {
 
@@ -131,7 +130,7 @@ public class GetReportSample {
      * The GetReport operation returns the contents of a report. Reports can potentially be
      * very large (>100MB) which is why we only return one report at a time, and in a
      * streaming fashion.
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

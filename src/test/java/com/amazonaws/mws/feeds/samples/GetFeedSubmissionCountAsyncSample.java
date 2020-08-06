@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Feed Submission Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetFeedSubmissionCountAsyncSample {
 
@@ -142,7 +141,7 @@ public class GetFeedSubmissionCountAsyncSample {
     /**
      * Get Feed Submission Count request sample
      * returns the number of feeds matching all of the specified criteria
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

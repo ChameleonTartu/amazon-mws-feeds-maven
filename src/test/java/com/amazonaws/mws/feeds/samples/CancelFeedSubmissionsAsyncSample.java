@@ -33,8 +33,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Cancel Feed Submissions  Samples
- *
- *
+ * @since 1.2.0
  */
 public class CancelFeedSubmissionsAsyncSample {
 
@@ -139,7 +138,7 @@ public class CancelFeedSubmissionsAsyncSample {
      * Cancel Feed Submissions request sample
      * cancels feed submissions - by default all of the submissions of the
      * last 30 days that have not started processing
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Update Report Acknowledgements  Samples
- *
- *
+ * @since 1.2.0
  */
 public class UpdateReportAcknowledgementsAsyncSample {
 
@@ -142,7 +141,7 @@ public class UpdateReportAcknowledgementsAsyncSample {
     /**
      * Update Report Acknowledgements request sample
      * The UpdateReportAcknowledgements operation updates the acknowledged status of one or more reports.
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

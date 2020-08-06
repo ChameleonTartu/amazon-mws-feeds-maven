@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Cancel Report Requests  Samples
- *
- *
+ * @since 1.2.0
  */
 public class CancelReportRequestsSample {
 
@@ -133,7 +132,7 @@ public class CancelReportRequestsSample {
      * Cancel Report Requests  request sample
      * cancels report requests that have not yet started processing,
      * by default all those within the last 90 days
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

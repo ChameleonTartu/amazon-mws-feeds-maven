@@ -31,8 +31,7 @@ import com.amazonaws.mws.feeds.model.ResponseMetadata;
 /**
  *
  * Get Feed Submission Result  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetFeedSubmissionResultSample {
 
@@ -128,7 +127,7 @@ public class GetFeedSubmissionResultSample {
     /**
      * Get Feed Submission Result  request sample
      * retrieves the feed processing report
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

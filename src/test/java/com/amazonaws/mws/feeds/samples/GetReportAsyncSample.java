@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Report  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportAsyncSample {
 
@@ -155,7 +154,7 @@ public class GetReportAsyncSample {
      * The GetReport operation returns the contents of a report. Reports can potentially be
      * very large (>100MB) which is why we only return one report at a time, and in a
      * streaming fashion.
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Report Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportCountAsyncSample {
 
@@ -142,7 +141,7 @@ public class GetReportCountAsyncSample {
      * returns a count of reports matching your criteria;
      * by default, the number of reports generated in the last 90 days,
      * regardless of acknowledgement status
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

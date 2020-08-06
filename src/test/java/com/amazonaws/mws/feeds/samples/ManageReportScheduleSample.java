@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Manage Report Schedule  Samples
- *
- *
+ * @since 1.2.0
  */
 public class ManageReportScheduleSample {
 
@@ -132,7 +131,7 @@ public class ManageReportScheduleSample {
      * Manage Report Schedule  request sample
      * Creates, updates, or deletes a report schedule
      * for a given report type, such as order reports in particular.
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

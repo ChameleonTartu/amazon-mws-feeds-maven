@@ -9,6 +9,9 @@ package com.amazonaws.mws.feeds.model;
  */
 /**
  * <p>ContentTypeParameter interface.</p>
+ *
+ * @author dmytro
+ * @version $Id: $Id
  */
 public interface ContentTypeParameter {
 

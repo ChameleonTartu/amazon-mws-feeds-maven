@@ -71,6 +71,9 @@ import java.util.regex.Pattern;
  *
  * MarketplaceWebServiceClient is implementation of MarketplaceWebService based on the
  * Apache <a href="http://jakarta.apache.org/commons/httpclient/">HttpClient</a>.
+ *
+ * @author dmytro
+ * @version $Id: $Id
  */
 public  class MarketplaceWebServiceClient implements MarketplaceWebService {
 

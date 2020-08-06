@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Feed Submission List By Next Token  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetFeedSubmissionListByNextTokenAsyncSample {
 
@@ -142,7 +141,7 @@ public class GetFeedSubmissionListByNextTokenAsyncSample {
     /**
      * Get Feed Submission List By Next Token request sample
      * retrieve the next batch of list items and if there are more items to retrieve
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

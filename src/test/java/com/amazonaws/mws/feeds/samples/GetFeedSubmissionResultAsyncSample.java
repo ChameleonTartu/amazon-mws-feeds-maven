@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Feed Submission Result  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetFeedSubmissionResultAsyncSample {
 
@@ -152,7 +151,7 @@ public class GetFeedSubmissionResultAsyncSample {
     /**
      * Get Feed Submission Result request sample
      * retrieves the feed processing report
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

@@ -80,9 +80,9 @@ public class CancelReportRequestsRequest {
      *
      * @param marketplace a {@link java.lang.String} object.
      * @param merchant a {@link java.lang.String} object.
-     * @param reportRequestIdList a {@link IdList} object.
-     * @param reportTypeList a {@link TypeList} object.
-     * @param reportProcessingStatusList a {@link StatusList} object.
+     * @param reportRequestIdList a {@link com.amazonaws.mws.feeds.model.IdList} object.
+     * @param reportTypeList a {@link com.amazonaws.mws.feeds.model.TypeList} object.
+     * @param reportProcessingStatusList a {@link com.amazonaws.mws.feeds.model.StatusList} object.
      * @param requestedFromDate a {@link javax.xml.datatype.XMLGregorianCalendar} object.
      * @param requestedToDate a {@link javax.xml.datatype.XMLGregorianCalendar} object.
      */
@@ -96,9 +96,9 @@ public class CancelReportRequestsRequest {
      *
      * @param marketplace a {@link java.lang.String} object.
      * @param merchant a {@link java.lang.String} object.
-     * @param reportRequestIdList a {@link IdList} object.
-     * @param reportTypeList a {@link TypeList} object.
-     * @param reportProcessingStatusList a {@link StatusList} object.
+     * @param reportRequestIdList a {@link com.amazonaws.mws.feeds.model.IdList} object.
+     * @param reportTypeList a {@link com.amazonaws.mws.feeds.model.TypeList} object.
+     * @param reportProcessingStatusList a {@link com.amazonaws.mws.feeds.model.StatusList} object.
      * @param requestedFromDate a {@link javax.xml.datatype.XMLGregorianCalendar} object.
      * @param requestedToDate a {@link javax.xml.datatype.XMLGregorianCalendar} object.
      * @param mwsAuthToken a {@link java.lang.String} object.
@@ -186,7 +186,7 @@ public class CancelReportRequestsRequest {
     /**
      * Gets the value of the reportRequestIdList property.
      *
-     * @return a {@link IdList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.IdList} object.
      */
     public IdList getReportRequestIdList() {
         return reportRequestIdList;
@@ -197,7 +197,7 @@ public class CancelReportRequestsRequest {
      *
      * @param value
      *     allowed object is
-     *     {@link IdList}
+     *     {@link com.amazonaws.mws.feeds.model.IdList}
      */
     public void setReportRequestIdList(IdList value) {
         this.reportRequestIdList = value;
@@ -215,7 +215,7 @@ public class CancelReportRequestsRequest {
     /**
      * Gets the value of the reportTypeList property.
      *
-     * @return a {@link TypeList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.TypeList} object.
      */
     public TypeList getReportTypeList() {
         return reportTypeList;
@@ -226,7 +226,7 @@ public class CancelReportRequestsRequest {
      *
      * @param value
      *     allowed object is
-     *     {@link TypeList}
+     *     {@link com.amazonaws.mws.feeds.model.TypeList}
      */
     public void setReportTypeList(TypeList value) {
         this.reportTypeList = value;
@@ -244,7 +244,7 @@ public class CancelReportRequestsRequest {
     /**
      * Gets the value of the reportProcessingStatusList property.
      *
-     * @return a {@link StatusList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.StatusList} object.
      */
     public StatusList getReportProcessingStatusList() {
         return reportProcessingStatusList;
@@ -255,7 +255,7 @@ public class CancelReportRequestsRequest {
      *
      * @param value
      *     allowed object is
-     *     {@link StatusList}
+     *     {@link com.amazonaws.mws.feeds.model.StatusList}
      */
     public void setReportProcessingStatusList(StatusList value) {
         this.reportProcessingStatusList = value;
@@ -365,7 +365,7 @@ public class CancelReportRequestsRequest {
      *
      * @deprecated  See {@link #setMarketplace(String)}
      * @param value a {@link java.lang.String} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withMarketplace(String value) {
         setMarketplace(value);
@@ -376,7 +376,7 @@ public class CancelReportRequestsRequest {
      * Sets the value of the Merchant property.
      *
      * @param value a {@link java.lang.String} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withMerchant(String value) {
         setMerchant(value);
@@ -387,7 +387,7 @@ public class CancelReportRequestsRequest {
      * Sets the value of the MWSAuthToken property.
      *
      * @param value a {@link java.lang.String} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withMWSAuthToken(String value) {
         setMWSAuthToken(value);
@@ -397,8 +397,8 @@ public class CancelReportRequestsRequest {
     /**
      * Sets the value of the ReportRequestIdList property.
      *
-     * @param value a {@link IdList} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @param value a {@link com.amazonaws.mws.feeds.model.IdList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withReportRequestIdList(IdList value) {
         setReportRequestIdList(value);
@@ -408,8 +408,8 @@ public class CancelReportRequestsRequest {
     /**
      * Sets the value of the ReportTypeList property.
      *
-     * @param value a {@link TypeList} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @param value a {@link com.amazonaws.mws.feeds.model.TypeList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withReportTypeList(TypeList value) {
         setReportTypeList(value);
@@ -419,8 +419,8 @@ public class CancelReportRequestsRequest {
     /**
      * Sets the value of the ReportProcessingStatusList property.
      *
-     * @param value a {@link StatusList} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @param value a {@link com.amazonaws.mws.feeds.model.StatusList} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withReportProcessingStatusList(StatusList value) {
         setReportProcessingStatusList(value);
@@ -431,7 +431,7 @@ public class CancelReportRequestsRequest {
      * Sets the value of the RequestedFromDate property.
      *
      * @param value a {@link javax.xml.datatype.XMLGregorianCalendar} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withRequestedFromDate(XMLGregorianCalendar value) {
         setRequestedFromDate(value);
@@ -442,7 +442,7 @@ public class CancelReportRequestsRequest {
      * Sets the value of the RequestedToDate property.
      *
      * @param value a {@link javax.xml.datatype.XMLGregorianCalendar} object.
-     * @return a {@link CancelReportRequestsRequest} object.
+     * @return a {@link com.amazonaws.mws.feeds.model.CancelReportRequestsRequest} object.
      */
     public CancelReportRequestsRequest withRequestedToDate(XMLGregorianCalendar value) {
         setRequestedToDate(value);

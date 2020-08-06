@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Manage Report Schedule  Samples
- *
- *
+ * @since 1.2.0
  */
 public class ManageReportScheduleAsyncSample {
 
@@ -142,7 +141,7 @@ public class ManageReportScheduleAsyncSample {
      * Manage Report Schedule request sample
      * Creates, updates, or deletes a report schedule
      * for a given report type, such as order reports in particular.
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

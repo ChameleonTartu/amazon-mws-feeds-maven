@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Get Report Request List  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportRequestListSample {
 
@@ -131,7 +130,7 @@ public class GetReportRequestListSample {
     /**
      * Get Report Request List  request sample
      * returns a list of report requests ids and their associated metadata
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

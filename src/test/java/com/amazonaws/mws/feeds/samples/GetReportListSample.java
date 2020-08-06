@@ -29,8 +29,7 @@ import com.amazonaws.mws.feeds.model.*;
 /**
  *
  * Get Report List  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportListSample {
 
@@ -132,7 +131,7 @@ public class GetReportListSample {
      * Get Report List  request sample
      * returns a list of reports; by default the most recent ten reports,
      * regardless of their acknowledgement status
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */

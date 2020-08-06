@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Report Request Count  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportRequestCountAsyncSample {
 
@@ -141,7 +140,7 @@ public class GetReportRequestCountAsyncSample {
      * Get Report Request Count request sample
      * returns a count of report requests; by default all the report
      * requests in the last 90 days
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

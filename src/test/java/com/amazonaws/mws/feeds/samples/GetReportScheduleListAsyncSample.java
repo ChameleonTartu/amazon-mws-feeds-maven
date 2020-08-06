@@ -34,8 +34,7 @@ import java.util.concurrent.Future;
 /**
  *
  * Get Report Schedule List  Samples
- *
- *
+ * @since 1.2.0
  */
 public class GetReportScheduleListAsyncSample {
 
@@ -138,7 +137,7 @@ public class GetReportScheduleListAsyncSample {
     /**
      * Get Report Schedule List request sample
      * returns the list of report schedules
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param requests list of requests to process
      */

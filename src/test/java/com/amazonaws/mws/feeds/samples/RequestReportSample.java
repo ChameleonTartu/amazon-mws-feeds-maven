@@ -35,8 +35,7 @@ import java.util.GregorianCalendar;
 /**
  *
  * Request Report  Samples
- *
- *
+ * @since 1.2.0
  */
 public class RequestReportSample {
 
@@ -157,7 +156,7 @@ public class RequestReportSample {
     /**
      * Request Report  request sample
      * requests the generation of a report
-     *   
+     *
      * @param service instance of MarketplaceWebService service
      * @param request Action to invoke
      */
