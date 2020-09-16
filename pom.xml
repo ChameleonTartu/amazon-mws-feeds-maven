@@ -208,9 +208,10 @@
                     <configuration>
                         <attach>true</attach>
                         <source>${jdk.version}</source>
-                        <!--                        <quiet>true</quiet>-->
+                        <quiet>true</quiet>
                         <detectOfflineLinks>false</detectOfflineLinks>
                         <encoding>${project.build.sourceEncoding}</encoding>
+                        <doclint>none</doclint>
                     </configuration>
                 </plugin>
                 <plugin>
