@@ -88,6 +88,7 @@
 
         <!-- TODO: Fix 3rd party library -->
         <ext-lib-amazon-mws-client-runtime.version>1.0.2</ext-lib-amazon-mws-client-runtime.version>
+        <jaxb-impl.version>2.1.2</jaxb-impl.version>
     </properties>
 
     <dependencies>
@@ -125,6 +126,16 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log4j-core.version}</version>
+        </dependency>
+
+        <!--
+            This dependency requires to be before jaxb-api.
+            See: https://stackoverflow.com/questions/15416579/warning-provider-com-sun-xml-internal-bind-v2-contextfactory-not-found#answer-16166407
+        -->
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>${jaxb-impl.version}</version>
         </dependency>
 
         <dependency>
