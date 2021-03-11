@@ -16,7 +16,7 @@ The library published into Maven Central repository
 <dependency>
   <groupId>com.github.chameleontartu</groupId>
   <artifactId>amazon-mws-feeds-maven</artifactId>
-  <version>1.3.0</version>
+  <version>1.4.0</version>
 </dependency>
 ```
 
@@ -40,7 +40,7 @@ Dependency itself:
 <dependency>
     <groupId>com.github.chameleontartu</groupId>
     <artifactId>amazon-mws-feeds-maven</artifactId>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
 </dependency>
 ```
 
