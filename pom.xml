@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.chameleontartu</groupId>
     <artifactId>amazon-mws-feeds-maven</artifactId>
-    <version>1.2.0</version>
+    <version>1.5.0</version>
     <packaging>jar</packaging>
     <name>Amazon MWS :: Feeds</name>
     <description>Amazon MWS Feeds API Client Library</description>
@@ -205,13 +205,6 @@
                         <downloadJavadocs>false</downloadJavadocs>
                     </configuration>
                 </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>${maven-surefire-plugin.version}</version>
-                </plugin>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>

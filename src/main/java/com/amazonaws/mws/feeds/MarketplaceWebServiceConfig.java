@@ -616,7 +616,7 @@ public class MarketplaceWebServiceConfig {
      *
      * There is not a perfect combination of these two parameters, it will depend
      * on your particular environment. Experiment.
-     * @return a {@link com.amazonaws.mws.MarketplaceWebServiceConfig} object.
+     * @return a {@link com.amazonaws.mws.feeds.MarketplaceWebServiceConfig} object.
      */
     public MarketplaceWebServiceConfig withMaxAsyncQueueSize(int maxAsyncQueueSize) {
         setMaxAsyncQueueSize(maxAsyncQueueSize);
