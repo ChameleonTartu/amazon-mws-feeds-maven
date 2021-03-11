@@ -102,7 +102,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
     /** Initialize JAXBContext and  Unmarshaller **/
     static {
         try {
-            jaxbContext = JAXBContext.newInstance("Model", MarketplaceWebService.class.getClassLoader());
+            jaxbContext = JAXBContext.newInstance("com.amazonaws.mws.feeds.model", MarketplaceWebService.class.getClassLoader());
         } catch (JAXBException ex) {
             throw new ExceptionInInitializerError(ex);
         }
