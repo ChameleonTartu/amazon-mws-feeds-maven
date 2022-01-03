@@ -14,4 +14,4 @@ jobs:
         with:
           java-version: 11
       - name: Install Java and Maven
-        run: mvn -U org.owasp:dependency-check-maven:5.3.0:check -q
+        run: mvn -U org.owasp:dependency-check-maven:6.5.2:check -q
