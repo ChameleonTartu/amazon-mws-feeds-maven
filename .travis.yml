@@ -5,15 +5,17 @@ jobs:
     - os: linux
       jdk: openjdk8
     - os: linux
-      jdk: openjdk9
+      jdk: jdk9
     - os: linux
-      jdk: openjdk10
+      jdk: jdk10
     - os: linux
       jdk: openjdk11
     - os: osx
-      jdk: openjdk9
+      jdk: jdk8
     - os: osx
-      jdk: openjdk10
+      jdk: jdk9
+    - os: osx
+      jdk: jdk10
     - os: osx
       jdk: openjdk11
 
