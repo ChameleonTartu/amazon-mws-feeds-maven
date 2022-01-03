@@ -21,4 +21,5 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: ${{ matrix.java }}
+      - name: Compile source-code
         run: mvn clean install
