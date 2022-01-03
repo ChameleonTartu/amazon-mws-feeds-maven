@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
     steps:
       - id: timestamp
-        run: echo "::set-output name=timestamp::$(timestamp +%s)"
+        run: ${{ startsWith(matrix.os, 'windows') && echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')" || echo "::set-output name=timestamp::$(timestamp +%s)" }}
       - name: Restore the previous run result
         uses: actions/cache@v2
         with:
@@ -55,7 +55,7 @@ jobs:
       fail-fast: false
     steps:
       - id: timestamp
-        run: echo "::set-output name=timestamp::$(timestamp +'%Y-%m-%dT%H:%M:%S')"
+        run: ${{ startsWith(matrix.os, 'windows') && echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')" || echo "::set-output name=timestamp::$(timestamp +%s)" }}
       - name: Restore the previous run result
         uses: actions/cache@v2
         with:
