@@ -74,8 +74,8 @@
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <maven-scm-provider-gitexe.version>1.11.2</maven-scm-provider-gitexe.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
@@ -211,6 +211,7 @@
                         <attach>true</attach>
                         <source>${jdk.version}</source>
                         <quiet>true</quiet>
+                        <source>8</source>
                         <detectOfflineLinks>false</detectOfflineLinks>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <doclint>none</doclint>
