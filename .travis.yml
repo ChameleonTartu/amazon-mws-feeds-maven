@@ -2,21 +2,55 @@ language: java
 sudo: false
 jobs:
   include:
+    # Linux
     - os: linux
+      dist: precise
+      jdk: openjdk6
+    - os: linux
+      dist: precise
+      jdk: openjdk7
+    - os: linux
+      dist: xenial
       jdk: openjdk8
     - os: linux
-      jdk: jdk9
+      dist: trusty
+      jdk: openjdk9
     - os: linux
-      jdk: jdk10
+      dist: xenial
+      jdk: openjdk10
     - os: linux
+      dist: xenial
       jdk: openjdk11
+
+    # MacOS
     - os: osx
-      jdk: jdk8
+      osx_image: xcode9.3
+      jdk: openjdk8
     - os: osx
-      jdk: jdk9
+      osx_image: xcode10.3
+      jdk: openjdk13
     - os: osx
-      jdk: jdk10
+      osx_image: xcode11.3
+      jdk: openjdk14
     - os: osx
+      osx_image: xcode12.3
+      jdk: openjdk15
+    - os: osx
+      osx_image: xcode12.5
+      jdk: openjdk16
+    - os: osx
+      osx_image: xcode13.1
+      jdk: openjdk17
+
+    # Windows
+    - os: windows
+      jdk: openjdk10
+    - os: windows
       jdk: openjdk11
 
 script: mvn clean install
+
+# TODO: Add support for more jdks and stabilize the whole pipeline
+# TODO: Publish a new version to public
+# TODO: Update existing core library, so project can be downloaded from Maven Central, not only be present there
+
