@@ -1,12 +1,11 @@
-name: os-and-java-versions-compatability
-concurrency: 'os-and-java-versions-compatability'
+name: Build project on different OS and different Java versions
 
 on:
   push:
   workflow_dispatch: # Allow for running this manually.
 
 jobs:
-  update-stats:
+  build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
