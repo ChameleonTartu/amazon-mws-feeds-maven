@@ -70,7 +70,7 @@
 
 
         <maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
@@ -173,10 +173,10 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
-<!--                    <configuration>-->
-<!--                        <source>${java.version}</source>-->
-<!--                        <target>${java.version}</target>-->
-<!--                    </configuration>-->
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                    </configuration>
                 </plugin>
 
                 <plugin>
@@ -362,7 +362,7 @@
         <profile>
             <id>deploy</id>
             <activation>
-                <jdk>[1.6,)</jdk>
+                <jdk>[1.8,)</jdk>
             </activation>
             <build>
                 <plugins>
