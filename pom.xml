@@ -51,6 +51,9 @@
 <!--        <jdk.version>1.6</jdk.version>-->
 <!--        <compiler.fork>1.6</compiler.fork>-->
 
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+
         <!-- Dependencies -->
         <maven-bundle.version>2.3.7</maven-bundle.version>
         <commons-codec.version>1.15</commons-codec.version>
