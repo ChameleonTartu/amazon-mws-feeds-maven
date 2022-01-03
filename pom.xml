@@ -87,7 +87,9 @@
         <dependency-check-maven.version>6.5.2</dependency-check-maven.version>
         <!-- TODO: Fix 3rd party library -->
         <ext-lib-amazon-mws-client-runtime.version>1.0.2</ext-lib-amazon-mws-client-runtime.version>
-        <jaxb-runtime.version>2.3.0</jaxb-runtime.version>
+
+        <!-- https://github.com/highsource/maven-jaxb2-plugin/issues/201-->
+        <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
     </properties>
 
     <dependencies>
