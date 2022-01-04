@@ -6,50 +6,7 @@ on:
 
 
 jobs:
-  fail:
-    runs-on: ${{ matrix.os }}
-    name: Failed
-    strategy:
-      matrix:
-        os: [ windows-2022, windows-2019, windows-2016 ]
-        java: [ 8 ] #, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
-        distribution: [ 'zulu' ]
-      fail-fast: false
-    steps:
-      - name: Save timestamp
-        id: timestamp
-        run: echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')"
-      # https://github.com/actions/cache/blob/main/examples.md#java---maven
-      - name: Cache local Maven repository
-        uses: actions/cache@v2
-        with:
-          path: ~\.m2\repository
-          key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
-          restore-keys: |
-            ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
-      # Update from Apache Nifi workflow: https://github.com/antwi01/apache-nifi/blob/74b1b2fc596f43389b9a7629e4c8544e9e008997/.github/workflows/ci-workflow.yml
-      - name: Get the previous run result
-        id: run_result
-        run: if (Test-Path ~\.m2\repository -PathType Container) { cat ~\.m2\repository\run_result 2> nul; if (!$?) { echo 'wrong_data_in_file' } } else { echo 'maven_repo_absent' }
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-        if: steps.run_result.outputs.run_result != 'success'
-      - name: Install Java and Maven
-        uses: actions/setup-java@v2
-        with:
-          distribution: ${{ matrix.distribution }}
-          java-version: ${{ matrix.java }}
-      - name: Maven version
-        run: mvn --version # Potentially make a check for Maven to be 3.8.3 or higher
-      - name: Build project
-        if: steps.run_result.outputs.run_result != 'success'
-        run: mvn clean install -q
-      - name: Save results
-        run: echo "::set-output name=run_result::success" > ~\.m2\repository\run_result
-      - name: Show results
-        run: cat ~\.m2\repository\run_result
-
-  success:
+  build:
     runs-on: ${{ matrix.os }}
     name: Passed
     strategy:
@@ -62,18 +19,18 @@ jobs:
       - name: Save timestamp
         id: timestamp
         run: echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')"
+      - name: Print GitHub metadata
+        run: echo '${{ github.run_id }}-${{ github.job }}'
       - name: Restore previous run result
         uses: actions/cache@v2
         with:
           path: ~\.m2\repository
-          key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
+          key: ${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
           restore-keys: |
-            ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
+            ${{ matrix.os }}-${{ matrix.java }}-
       - name: Get the previous run result
         id: run_result
         run: if (Test-Path ~\.m2\repository -PathType Container) { cat ~\.m2\repository\run_result 2> nul; if (!$?) { echo 'wrong_data_in_file' } } else { echo 'maven_repo_absent' }
-
-
       - name: Check out Git repository
         uses: actions/checkout@v2
         if: steps.run_result.outputs.run_result != 'success'
