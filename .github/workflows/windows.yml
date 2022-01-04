@@ -22,17 +22,19 @@ jobs:
       - name: Cache local Maven repository
         uses: actions/cache@v2
         with:
-          path: ~\.m2\repository\com
+          path: ~\.m2\repository
           key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
           restore-keys: |
             ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
-      - name: List files in folder and sub-folders
-        run: cd ~\.m2\repository; dir
+#      - name: List files in folder and sub-folders
+#        run: cd ~\.m2\repository; dir
       # Update from Apache Nifi workflow: https://github.com/antwi01/apache-nifi/blob/74b1b2fc596f43389b9a7629e4c8544e9e008997/.github/workflows/ci-workflow.yml
       - name: Get the previous run result
         id: run_result
-        run: cat ~\.m2\repository\run_result 2> nul; if (!$?) { echo 'default' }
-
+        run: |
+          Test-Path ~\.m2\repository -PathType Container
+          if (!$?) { cat ~\.m2\repository\run_result 2> nul }
+          if (!$?) { echo 'default' }
       - name: Check out Git repository
         uses: actions/checkout@v2
         if: steps.run_result.outputs.run_result != 'success'
