@@ -27,7 +27,7 @@ jobs:
           restore-keys: |
             ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
       - name: List files in folder and sub-folders
-        run: dir /s /b
+        run: dir
       - name: Get the previous run result
         id: run_result
         # TODO: Fix this part of the pipeline
