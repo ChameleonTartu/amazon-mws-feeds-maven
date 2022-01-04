@@ -27,7 +27,7 @@ jobs:
           restore-keys: |
             ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
       - name: List files
-        run: ls -lt
+        run: ls
       - name: Get the previous run result
         id: run_result
         run: cat run_result 2> nul; if (!$?) { echo 'default' }
