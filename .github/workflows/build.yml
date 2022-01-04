@@ -17,14 +17,22 @@ jobs:
         java: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
       fail-fast: false
     steps:
-      - id: timestamp
-        run: ${{ startsWith(matrix.os, 'windows') && echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')" || echo "::set-output name=timestamp::$(timestamp +%s)" }}
+      - id: timestampWindows
+        if: ${{ startsWith(matrix.os, 'windows') }}
+        run: echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')"
+        env:
+          OS: windows
+      - id: timestampUnix
+        if: ${{ !startsWith(matrix.os, 'windows') }}
+        run: echo "::set-output name=timestamp::$(timestamp +%s)"
+        env:
+          OS: unix
       - name: Restore the previous run result
         uses: actions/cache@v2
         with:
           path: |
             run_result
-          key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
+          key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ env.OS == 'windows' && steps.timestampWindows.outputs.timestamp || steps.timestampUnix.outputs.timestamp }}
           restore-keys: |
             ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
       - name: Get the previous run result
@@ -54,14 +62,22 @@ jobs:
         java: [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
       fail-fast: false
     steps:
-      - id: timestamp
-        run: ${{ startsWith(matrix.os, 'windows') && echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')" || echo "::set-output name=timestamp::$(timestamp +%s)" }}
+      - id: timestampWindows
+        if: ${{ startsWith(matrix.os, 'windows') }}
+        run: echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')"
+        env:
+          OS: windows
+      - id: timestampUnix
+        if: ${{ !startsWith(matrix.os, 'windows') }}
+        run: echo "::set-output name=timestamp::$(timestamp +%s)"
+        env:
+          OS: unix
       - name: Restore the previous run result
         uses: actions/cache@v2
         with:
           path: |
             run_result
-          key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
+          key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ env.OS == 'windows' && steps.timestampWindows.outputs.timestamp || steps.timestampUnix.outputs.timestamp }}
           restore-keys: |
             ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
       - name: Get the previous run result
