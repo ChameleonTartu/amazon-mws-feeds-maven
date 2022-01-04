@@ -29,7 +29,7 @@ jobs:
       # Update from Apache Nifi workflow: https://github.com/antwi01/apache-nifi/blob/74b1b2fc596f43389b9a7629e4c8544e9e008997/.github/workflows/ci-workflow.yml
       - name: Get the previous run result
         id: run_result
-        run: if (Test-Path ~\.m2\repository -PathType Container) { cat ~\.m2\repository\run_result 2> nul; if (!$?) { echo 'default' } } else { echo 'default' }
+        run: if (Test-Path ~\.m2\repository -PathType Container) { cat ~\.m2\repository\run_result 2> nul; if (!$?) { echo 'wrong_data_in_file' } } else { echo 'maven_repo_absent' }
       - name: Check out Git repository
         uses: actions/checkout@v2
         if: steps.run_result.outputs.run_result != 'success'
