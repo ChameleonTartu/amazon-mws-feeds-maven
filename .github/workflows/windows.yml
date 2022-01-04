@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: [ windows-2022, windows-2019, windows-2016 ]
-        java: [ 8 ] # , 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        java: [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
         distribution: [ 'zulu' ]
       fail-fast: false
     steps:
@@ -25,12 +25,12 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~\.m2\repository
-          key: ${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
+          key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
           restore-keys: |
-            ${{ matrix.os }}-${{ matrix.java }}-
+            ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
       - name: Get the previous run result
         id: run_result
-        run: if (Test-Path ~\.m2\repository -PathType Container) { cat ~\.m2\repository\run_result 2> nul; if (!$?) { echo 'wrong_data_in_file' } } else { echo 'maven_repo_absent' }
+        run: if (Test-Path ~\.m2\repository -PathType Container) { cat ~\.m2\repository\run_result 2> nul; if (!$?) { echo 'run_result_file_missing' } } else { echo 'maven_repo_absent' }
       - name: Check out Git repository
         uses: actions/checkout@v2
         if: steps.run_result.outputs.run_result != 'success'
