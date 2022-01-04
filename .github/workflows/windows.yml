@@ -18,20 +18,20 @@ jobs:
       - name: Save timestamp
         id: timestamp
         run: echo "::set-output name=timestamp::$(get-date -f 'yyyy/MM/dd hh:mm:ss tt')"
-      - name: Restore the previous run result
+      # https://github.com/actions/cache/blob/main/examples.md#java---maven
+      - name: Cache local Maven repository
         uses: actions/cache@v2
         with:
-          path: |
-            run_result
+          path: ~/.m2/repository
           key: ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-${{ steps.timestamp.outputs.timestamp }}
           restore-keys: |
             ${{ github.run_id }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.java }}-
       - name: List files in folder and sub-folders
-        run: dir
+        run: cd ~/.m2/repository; dir
       - name: Get the previous run result
         id: run_result
-        # TODO: Fix this part of the pipeline
-        run: cat run_result 2> nul; if (!$?) { echo 'default' }
+        run: cat ~/.m2/repository/run_result 2> nul; if (!$?) { echo 'default' }
+
       - name: Check out Git repository
         uses: actions/checkout@v2
         if: steps.run_result.outputs.run_result != 'success'
@@ -46,7 +46,7 @@ jobs:
         if: steps.run_result.outputs.run_result != 'success'
         run: mvn clean install -q
       - name: Save results
-        run: echo "::set-output name=run_result::success" > run_result
+        run: echo "::set-output name=run_result::success" > ~/.m2/repository/run_result
 
 #  success:
 #    runs-on: ${{ matrix.os }}
