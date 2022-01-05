@@ -13,7 +13,7 @@
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -22,7 +22,6 @@
         <developer>
             <id>chameleontartu</id>
             <name>Dmytro Chasovskyi</name>
-            <email>dmitriy.chasovskoy@gmail.com</email>
             <url>https://www.linkedin.com/in/dmytrochasovskyi/</url>
             <roles>
                 <role>developer</role>
@@ -49,22 +48,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <jdk.version>1.6</jdk.version>
-        <compiler.fork>1.6</compiler.fork>
+        <jdk.version>1.7</jdk.version>
 
         <!-- Dependencies -->
         <maven-bundle.version>2.3.7</maven-bundle.version>
-        <commons-codec.version>1.14</commons-codec.version>
-        <commons-httpclient.version>3.1</commons-httpclient.version>
+        <commons-codec.version>1.15</commons-codec.version>
         <commons-logging.version>1.1</commons-logging.version>
 
-        <httpcore.version>4.4.13</httpcore.version>
-        <httpclient.version>4.5.12</httpclient.version>
+        <httpcore.version>4.4.15</httpcore.version>
+        <httpclient.version>4.5.13</httpclient.version>
 
-        <mockito.version>1.9.5</mockito.version>
-        <junit.version>4.13.1</junit.version>
+        <mockito.version>1.10.19</mockito.version>
+        <junit.version>4.13.2</junit.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
-        <log4j-core.version>2.13.3</log4j-core.version>
+        <log4j-core.version>2.17.1</log4j-core.version>
         <jaxb-ri.version>2.3.3</jaxb-ri.version>
 
         <!-- Plugins -->
@@ -73,12 +70,12 @@
 
 
         <maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <maven-scm-provider-gitexe.version>1.11.2</maven-scm-provider-gitexe.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
@@ -86,9 +83,13 @@
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
 
+
+        <dependency-check-maven.version>6.5.2</dependency-check-maven.version>
         <!-- TODO: Fix 3rd party library -->
         <ext-lib-amazon-mws-client-runtime.version>1.0.2</ext-lib-amazon-mws-client-runtime.version>
-        <jaxb-impl.version>2.1.2</jaxb-impl.version>
+
+        <!-- https://github.com/highsource/maven-jaxb2-plugin/issues/201-->
+        <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
     </properties>
 
     <dependencies>
@@ -102,12 +103,6 @@
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging-api</artifactId>
             <version>${commons-logging.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-            <version>${commons-httpclient.version}</version>
         </dependency>
 
         <dependency>
@@ -128,14 +123,16 @@
             <version>${log4j-core.version}</version>
         </dependency>
 
-        <!--
-            This dependency requires to be before jaxb-api.
-            See: https://stackoverflow.com/questions/15416579/warning-provider-com-sun-xml-internal-bind-v2-contextfactory-not-found#answer-16166407
-        -->
         <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
-            <version>${jaxb-impl.version}</version>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>${jaxb-runtime.version}</version>
         </dependency>
 
         <dependency>
@@ -181,8 +178,6 @@
                     <configuration>
                         <source>${jdk.version}</source>
                         <target>${jdk.version}</target>
-                        <maxmem>256M</maxmem>
-                        <fork>${compiler.fork}</fork>
                     </configuration>
                 </plugin>
 
@@ -291,7 +286,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>${maven-deploy-plugin.version}</version>
@@ -304,6 +298,23 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>${dependency-check-maven.version}</version>
+                <executions>
+                    <execution>
+                        <id>owasp</id>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <cveValidForHours>1</cveValidForHours>
+                    <failBuildOnCVSS>5.0</failBuildOnCVSS>
+                </configuration>
             </plugin>
 
         </plugins>
@@ -353,7 +364,7 @@
         <profile>
             <id>deploy</id>
             <activation>
-                <jdk>[1.6,)</jdk>
+                <jdk>[1.8,)</jdk>
             </activation>
             <build>
                 <plugins>

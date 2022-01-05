@@ -40,7 +40,7 @@ public interface  MarketplaceWebService {
      * Get Report
      *
      * The GetReport operation returns the contents of a report. Reports can potentially be
-     * very large (>100MB) which is why we only return one report at a time, and in a
+     * very large (&gt;100MB) which is why we only return one report at a time, and in a
      * streaming fashion.
      *
      * @param request
