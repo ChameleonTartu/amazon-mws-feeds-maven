@@ -1,4 +1,4 @@
-name: Build project for Linux and macOS and different Java versions 8 to 17
+name: Linux and macOS
 
 on:
   push:

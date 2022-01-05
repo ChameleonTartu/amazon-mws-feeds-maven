@@ -1,4 +1,4 @@
-name: Build project on Windows OS and Java versions 8 to 17
+name: Windows
 
 on:
   push:

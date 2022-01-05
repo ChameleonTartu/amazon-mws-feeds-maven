@@ -2365,7 +2365,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
     private Unmarshaller getUnmarshaller() {
         return unmarshaller.get();
     }
-                                    /**
+    /**
      * Convert GetReportRequest to name value pairs
      */
     private Map<String, String> convertGetReport(GetReportRequest request) {
@@ -2388,7 +2388,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         return params;
     }
         
-                                    /**
+    /**
      * Convert GetReportScheduleCountRequest to name value pairs
      */
     private Map<String, String> convertGetReportScheduleCount(GetReportScheduleCountRequest request) {
@@ -2415,7 +2415,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         return params;
     }
         
-                                    /**
+    /**
      * Convert GetReportRequestListByNextTokenRequest to name value pairs
      */
     private Map<String, String> convertGetReportRequestListByNextToken(GetReportRequestListByNextTokenRequest request) {
@@ -2438,7 +2438,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         return params;
     }
         
-                                    /**
+    /**
      * Convert UpdateReportAcknowledgementsRequest to name value pairs
      */
     private Map<String, String> convertUpdateReportAcknowledgements(UpdateReportAcknowledgementsRequest request) {
@@ -2468,7 +2468,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         return params;
     }
         
-                                    /**
+    /**
      * Convert SubmitFeedRequest to name value pairs
      */
     private Map<String, String> convertSubmitFeed(SubmitFeedRequest request) {

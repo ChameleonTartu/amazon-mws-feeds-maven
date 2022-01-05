@@ -2,8 +2,9 @@
 Mavenized version of Amazon MWS Feeds API
 
 [![Hits-of-Code](https://hitsofcode.com/github/chameleontartu/amazon-mws-feeds-maven)](https://hitsofcode.com/view/github/chameleontartu/amazon-mws-feeds-maven)
-[![Build Status](https://travis-ci.com/ChameleonTartu/amazon-mws-feeds-maven.svg?branch=master)](https://travis-ci.com/ChameleonTartu/amazon-mws-feeds-maven)
-![Maven Central](https://img.shields.io/maven-central/v/com.github.chameleontartu/amazon-mws-feeds-maven)
+[![Linux and macOS](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/unix.yml/badge.svg)](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/unix.yml)
+[![Windows](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/windows.yml/badge.svg)](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/windows.yml)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.chameleontartu/amazon-mws-feeds-maven/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.chameleontartu/amazon-mws-feeds-maven/)
 [![](https://jitpack.io/v/ChameleonTartu/amazon-mws-feeds-maven.svg)](https://jitpack.io/#ChameleonTartu/amazon-mws-feeds-maven)
 
 # How to use into Maven (pom.xml)
@@ -16,7 +17,7 @@ The library published into Maven Central repository
 <dependency>
   <groupId>com.github.chameleontartu</groupId>
   <artifactId>amazon-mws-feeds-maven</artifactId>
-  <version>1.4.0</version>
+  <version>1.5.0</version>
 </dependency>
 ```
 
@@ -40,7 +41,7 @@ Dependency itself:
 <dependency>
     <groupId>com.github.chameleontartu</groupId>
     <artifactId>amazon-mws-feeds-maven</artifactId>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
 </dependency>
 ```
 
@@ -55,13 +56,17 @@ The other MWS projects that ported from Ant to Maven. See [docs](https://github.
 
 # Java library version
 
-| Lib version  |
-|--------------|
-| 2014-02-01   |
+| Lib version |
+|-------------|
+| 2016-09-21  |
+
+# Client library changes
+
+[MWS Feeds](https://docs.developer.amazonservices.com/en_US/feeds/Feeds_ClientLibraries.html)
 
 # Contribution
 
-To contribute to this project feel free to submit issues and PRs as well as questions and enhancement proposals.
+To contribute to this project feel free to submit issues, PRs, questions, enhancement proposals and support via cup of coffee.
 
 ## How to support?
 
