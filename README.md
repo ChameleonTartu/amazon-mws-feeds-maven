@@ -2,7 +2,8 @@
 Mavenized version of Amazon MWS Feeds API
 
 [![Hits-of-Code](https://hitsofcode.com/github/chameleontartu/amazon-mws-feeds-maven)](https://hitsofcode.com/view/github/chameleontartu/amazon-mws-feeds-maven)
-[![Linux and macOS](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/unix.yml/badge.svg)](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/unix.yml)
+[![Linux](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/linux.yml/badge.svg)](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/linux.yml)
+[![MacOS](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/macos.yml/badge.svg)](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/macos.yml)
 [![Windows](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/windows.yml/badge.svg)](https://github.com/ChameleonTartu/amazon-mws-feeds-maven/actions/workflows/windows.yml)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.chameleontartu/amazon-mws-feeds-maven/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.chameleontartu/amazon-mws-feeds-maven/)
 [![](https://jitpack.io/v/ChameleonTartu/amazon-mws-feeds-maven.svg)](https://jitpack.io/#ChameleonTartu/amazon-mws-feeds-maven)

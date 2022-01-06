@@ -51,7 +51,6 @@
         <jdk.version>1.7</jdk.version>
 
         <!-- Dependencies -->
-        <maven-bundle.version>2.3.7</maven-bundle.version>
         <commons-codec.version>1.15</commons-codec.version>
         <commons-logging.version>1.1</commons-logging.version>
 
@@ -62,13 +61,10 @@
         <junit.version>4.13.2</junit.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
         <log4j-core.version>2.17.1</log4j-core.version>
-        <jaxb-ri.version>2.3.3</jaxb-ri.version>
 
         <!-- Plugins -->
         <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
         <maven-idea-plugin.version>2.2.1</maven-idea-plugin.version>
-
-
         <maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
@@ -85,10 +81,6 @@
 
 
         <dependency-check-maven.version>6.5.2</dependency-check-maven.version>
-        <!-- TODO: Fix 3rd party library -->
-        <ext-lib-amazon-mws-client-runtime.version>1.0.2</ext-lib-amazon-mws-client-runtime.version>
-
-        <!-- https://github.com/highsource/maven-jaxb2-plugin/issues/201-->
         <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
     </properties>
 
@@ -319,13 +311,6 @@
 
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
 
     <profiles>
         <profile>
